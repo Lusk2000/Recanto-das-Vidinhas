@@ -35,7 +35,7 @@ export default function App() {
   };
 
   const handleCopyPix = () => {
-    navigator.clipboard.writeText("45414370000103");
+    navigator.clipboard.writeText("83138277691");
     setCopiedPix(true);
     setTimeout(() => setCopiedPix(false), 3000);
   };
@@ -94,6 +94,7 @@ export default function App() {
         )}
       </header>
 
+      <main>
       {/* Hero Section */}
       <section id="hero" className="relative min-h-[100svh] flex items-center pt-32 pb-16 lg:pt-40 lg:pb-24 overflow-hidden bg-[#F0F9FF]">
         {/* Playful Background Elements */}
@@ -235,7 +236,7 @@ export default function App() {
                   <div 
                     className="w-full flex justify-center mb-6 overflow-hidden rounded-2xl bg-black relative"
                   >
-                    <iframe width="100%" height="450" src="https://www.youtube.com/embed/ajHrxbDwMxc?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0" title="História do Vovô Zino" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                    <iframe width="100%" height="450" src="https://www.youtube.com/embed/ajHrxbDwMxc?autoplay=1&controls=0&modestbranding=1&rel=0" title="História do Vovô Zino" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                   </div>
 
                   <p className="text-[#475569] mb-6 md:mb-8 font-semibold leading-relaxed text-base md:text-lg">
@@ -480,6 +481,7 @@ export default function App() {
           </div>
         </div>
       </section>
+      </main>
 
       {/* Footer */}
       <footer className="bg-[#334155] text-white py-12 border-t-8 border-[#FFD100]">
@@ -496,10 +498,10 @@ export default function App() {
           </div>
           
           <div className="flex gap-4">
-            <a href="#" className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#FFD100] hover:text-[#334155] transition-colors">
+            <a href="https://www.instagram.com/recanto_vidinhas_tp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram do Recanto das Vidinhas" className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#FFD100] hover:text-[#334155] transition-colors">
               <Instagram className="w-6 h-6" />
             </a>
-            <a href="#" className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#FFD100] hover:text-[#334155] transition-colors">
+            <a href="https://www.facebook.com/recantodasvidinhastp" target="_blank" rel="noopener noreferrer" aria-label="Facebook do Recanto das Vidinhas" className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#FFD100] hover:text-[#334155] transition-colors">
               <Facebook className="w-6 h-6" />
             </a>
           </div>
@@ -525,7 +527,7 @@ export default function App() {
           >
             <div className="p-6 border-b border-gray-100 flex justify-between items-center bg-[#F0F9FF]">
               <h2 className="text-2xl font-black text-[#334155]">{modalContent.title}</h2>
-              <button onClick={() => setModalContent(null)} className="p-2 bg-white rounded-full text-gray-500 hover:text-red-500 shadow-sm hover:bg-gray-50 transition-colors">
+              <button onClick={() => setModalContent(null)} aria-label="Fechar Modal" className="p-2 bg-white rounded-full text-gray-500 hover:text-red-500 shadow-sm hover:bg-gray-50 transition-colors">
                 <X className="w-6 h-6" />
               </button>
             </div>

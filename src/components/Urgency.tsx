@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { AlertCircle, Heart } from 'lucide-react';
+import { LiteYouTubeEmbed } from './LiteYouTubeEmbed';
 
 export const Urgency: React.FC = () => {
   return (
@@ -77,16 +78,7 @@ export const Urgency: React.FC = () => {
                 <div 
                   className="w-full relative aspect-[9/16] md:aspect-video overflow-hidden rounded-[2rem] md:rounded-2xl bg-black shadow-2xl border-4 border-[#00AEEF]/20"
                 >
-                  <iframe 
-                    className="absolute inset-0 w-full h-full object-cover"
-                    src="https://www.youtube.com/embed/ajHrxbDwMxc?controls=1&modestbranding=1&rel=0&iv_load_policy=3" 
-                    title="História do Vovô Zino" 
-                    frameBorder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerPolicy="strict-origin-when-cross-origin" 
-                    allowFullScreen
-                    loading="lazy"
-                  ></iframe>
+                  <LiteYouTubeEmbed videoId="ajHrxbDwMxc" title="História do Vovô Zino" />
                   {/* Smartphone Overlay for Mobile Story vibe */}
                   <div className="absolute inset-0 pointer-events-none border-[12px] border-black/10 rounded-[2rem] md:hidden"></div>
                 </div>

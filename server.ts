@@ -17,7 +17,7 @@ async function startServer() {
           defaultSrc: ["'self'"],
           scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'", "https://www.youtube.com", "https://s.ytimg.com"],
           styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
-          imgSrc: ["'self'", "data:", "https://i.ibb.co", "https://www.google.com"],
+          imgSrc: ["'self'", "data:", "https://i.ibb.co", "https://i.ytimg.com", "https://www.google.com"],
           fontSrc: ["'self'", "https://fonts.gstatic.com"],
           connectSrc: ["'self'", "ws:", "wss:"], // Added WebSockets for dev
           frameSrc: ["'self'", "https://www.youtube.com", "https://www.youtube-nocookie.com", "https://www.google.com"],

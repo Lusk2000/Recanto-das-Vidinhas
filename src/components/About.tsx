@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ShieldCheck, Info } from 'lucide-react';
+import { LiteYouTubeEmbed } from './LiteYouTubeEmbed';
 
 export const About: React.FC = () => {
   return (
@@ -38,10 +39,10 @@ export const About: React.FC = () => {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8 md:mt-0">
             <div className="bg-black rounded-[2.5rem] overflow-hidden shadow-xl border-4 border-white/20 aspect-[9/16] sm:aspect-auto sm:h-72 flex justify-center relative sm:mt-12">
-              <iframe className="absolute inset-0 w-full h-full object-cover" src="https://www.youtube.com/embed/a7R3FzhvJgY?controls=0&modestbranding=1&rel=0" title="Apresentação do Projeto" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen loading="lazy"></iframe>
+              <LiteYouTubeEmbed videoId="a7R3FzhvJgY" title="Apresentação do Projeto" />
             </div>
             <div className="bg-black rounded-[2.5rem] overflow-hidden shadow-xl border-4 border-white/20 aspect-[9/16] sm:aspect-auto sm:h-72 flex justify-center relative">
-              <iframe className="absolute inset-0 w-full h-full object-cover" src="https://www.youtube.com/embed/8dwzNq8R2WI?controls=0&modestbranding=1&rel=0" title="Dia a dia do Recanto" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen loading="lazy"></iframe>
+              <LiteYouTubeEmbed videoId="8dwzNq8R2WI" title="Dia a dia do Recanto" />
             </div>
           </div>
         </div>

@@ -1,0 +1,20 @@
+{
+  "short_name": "Vidinhas",
+  "name": "Recanto das Vidinhas",
+  "icons": [
+    {
+      "src": "https://i.ibb.co/LDkk6LMG/logo2.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://i.ibb.co/LDkk6LMG/logo2.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#FFD100",
+  "background_color": "#F0F9FF"
+}
